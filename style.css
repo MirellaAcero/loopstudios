@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+[class^=col-], [class*=" col-"] {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.col-responsive {
+  width: 50%;
+  float: left;
+}
+
+.col-3 {
+  width: 25%;
+  float: left;
+  padding: 20px;
+}
+
+.mobile {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Alata", serif;
+  color: hsl(0, 0%, 100%);
+}
+
+h1, h2, h3, a {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 130px;
+}
+
+.ham {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ham span {
+  background-color: hsl(0, 0%, 100%);
+  display: block;
+  height: 3px;
+  width: 28px;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.enlaces-menu {
+  display: flex;
+  padding: 0;
+}
+
+.enlaces-menu li {
+  padding: 0 10px;
+  list-style-type: none;
+  transition: 0.3s;
+}
+
+.enlaces-menu li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+header {
+  background-image: url(images/desktop/image-hero.jpg);
+  height: 95vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+header .text {
+  padding: 20px;
+  border: 2px solid hsl(0, 0%, 100%);
+  width: 40%;
+  position: relative;
+  top: 76px;
+  left: 130px;
+}
+header h1 {
+  font-size: 60px;
+}
+
+.visual-r {
+  padding: 100px 130px;
+  height: 100vh;
+}
+.visual-r .text {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 55%);
+  position: relative;
+  padding: 55px 65px;
+  top: 212px;
+  right: 0;
+  padding-right: 140px;
+}
+.visual-r h2 {
+  font-size: 38px;
+  color: hsl(0, 0%, 0%);
+  margin-bottom: 20px;
+}
+
+.our-creations {
+  height: 180vh;
+}
+.our-creations .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 130px;
+  margin-bottom: 40px;
+  color: hsl(0, 0%, 0%);
+}
+.our-creations .title h2 {
+  font-size: 38px;
+}
+.our-creations .title a {
+  border: 1px solid hsl(0, 0%, 0%);
+  padding: 10px 21px;
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+}
+.our-creations .title a:hover {
+  background: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%) !important;
+}
+.our-creations .creations {
+  padding: 0 98px;
+  /* Conteneur principal */
+  /* Image originale */
+  /* Texte original */
+  /********* Hover image et texte *******/
+  /* Overlay */
+  /* Apparition overlay sur passage souris */
+  /********* Hover background et texte uniquement *******/
+}
+.our-creations .creations .overlay-image {
+  position: relative;
+  width: 100%;
+}
+.our-creations .creations .overlay-image .image {
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+.our-creations .creations .overlay-image .normal .text {
+  color: hsl(0, 0%, 100%);
+}
+.our-creations .creations .overlay-image .hover .text {
+  color: hsl(0, 0%, 0%);
+}
+.our-creations .creations .overlay-image .text {
+  font-size: 30px;
+  text-align: left;
+  position: absolute;
+  top: 90%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.our-creations .creations .overlay-image .hover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.our-creations .creations .overlay-image:hover .hover {
+  opacity: 1;
+}
+.our-creations .creations .overlay-image .normal {
+  transition: 0.5s ease;
+}
+.our-creations .creations .overlay-image:hover .normal {
+  opacity: 0;
+}
+.our-creations .creations .overlay-image .hover {
+  background-color: hsla(0, 0%, 100%, 0.71);
+}
+
+.sliding-middle-out {
+  display: inline-block;
+  position: relative;
+}
+
+.sliding-middle-out:after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.sliding-middle-out:hover:after {
+  width: 70%;
+  background: hsl(0, 0%, 100%);
+}
+
+footer {
+  background-color: hsl(0, 0%, 0%);
+  height: 150px;
+  padding: 43px 130px 0;
+}
+footer .menu-footer ul {
+  display: flex;
+  margin-top: 13px;
+}
+footer .menu-footer ul li {
+  list-style: none;
+}
+footer .menu-footer ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 10px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+footer .icon-footer ul {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 13px;
+}
+footer .icon-footer ul li {
+  list-style: none;
+}
+footer .icon-footer ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  margin-left: 20px;
+}
+footer .text {
+  text-align: right;
+  color: hsl(0, 0%, 55%);
+}
+
+@media (max-width: 768px) {
+  .col-responsive {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  .container {
+    padding: 0 40px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  header {
+    background-image: url(images/mobile/image-hero.jpg);
+  }
+  header .text {
+    width: 80%;
+    top: 30%;
+    left: 0;
+    padding: 40px;
+    margin: auto;
+  }
+  header .text h1 {
+    font-size: 40px;
+  }
+  .visual-r {
+    padding: 0;
+    padding-top: 140px;
+    height: 100%;
+  }
+  .visual-r img {
+    width: 100%;
+  }
+  .visual-r .text {
+    padding: 55px 25px 30px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .visual-r .text h2 {
+    font-size: 36px;
+  }
+  .visual-r .text p {
+    font-size: 20px;
+  }
+  .our-creations {
+    height: 100%;
+  }
+  .our-creations .title {
+    display: block;
+    padding: 0;
+  }
+  .our-creations .title h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .our-creations .creations {
+    padding: 0;
+  }
+  .our-creations .creations .col-responsive img {
+    width: 100%;
+  }
+  .our-creations .creations .col-responsive h3 {
+    color: hsl(0, 0%, 100%);
+    font-size: 35px;
+    position: relative;
+    top: -86px;
+    left: 18px;
+  }
+  .our-creations .creations .btn {
+    text-align: center;
+  }
+  .our-creations .creations .btn a {
+    text-decoration: none;
+    border: 2px solid hsl(0, 0%, 0%);
+    padding: 20px 50px;
+    color: hsl(0, 0%, 0%);
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 6px;
+  }
+  footer {
+    height: 750px;
+    margin-top: 140px;
+    padding: 0;
+  }
+  footer .col-responsive {
+    text-align: center;
+  }
+  footer .col-responsive .logo {
+    padding: 63px 0 23px 0;
+  }
+  footer .menu-footer ul {
+    display: block;
+  }
+  footer .menu-footer ul li a {
+    font-size: 25px;
+    margin: 0;
+    padding: 20px 0;
+  }
+  footer .icon-footer ul {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+  }
+  footer .icon-footer ul img {
+    width: 40px;
+  }
+  footer .text {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+/*  MENU  MOBILE */
+@media (max-width: 768px) {
+  .ham {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    transition: 0.2s 0.1s;
+    z-index: 1;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .logo {
+    padding-left: 25px;
+  }
+  .enlaces-menu {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+    flex-direction: column;
+    justify-content: center;
+    height: 99vh;
+    margin-top: -26px;
+    padding: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease-out;
+    font-weight: 100;
+    text-transform: uppercase;
+    background: hsl(0, 0%, 0%);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+  .enlaces-menu li {
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+  }
+}
+/* ANIMATION */
+@keyframes muestraMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.enlaces-menu.activado {
+  display: flex;
+  animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animado {
+  transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado {
+  opacity: 0;
+}
+
+.br-3.animado {
+  transform: rotate(45deg) translate(-10px, -8px);
+}
+
+/*# sourceMappingURL=style.css.map */
